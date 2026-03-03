@@ -3,113 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aulas Online - Matemática e Física</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Gabriel Ensina | Matemática e Física</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <h1 class="logo">Gabriel Ensina</h1>
-                <ul class="nav-links">
-                    <li><a href="#sobre">Sobre mim</a></li>
-                    <li><a href="#aulas">Sobre as aulas</a></li>
-                    <li><a href="#aulas">Conteúdo</a></li>
-                    <li><a href="#valores">Valores</a></li>
-                    <li><a href="#contato">Contato</a></li>
+
+    <!-- Menu Superior contendo logotipo e botões "Sobre mim", "Metodologia" e "Aula Experimental" -->
+    <!-- PRÓXIMO PASSO: TRAZER MENU DINAMICAMENTE PARA TODAR AS PÁGINAS COM SCRIPT -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid px-4 py-2">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/logo.png" alt="Gabriel Ensina" height="35">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto px-2 py-2">
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="metodo.html">Metodologia</a></li>
+                    <li class="nav-item"><a class="btn btn-warning ms-lg-3 fw-bold" href="contato.html">Aula Experimental</a></li>
                 </ul>
             </div>
-        </nav>
-        <div class="hero">
-            <div class="container">
-                <h2>Domine a Matemática com confiança e clareza</h2>
-                <p>Aulas personalizadas do reforço escolar ao ensino superior.</p>
-            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero com título, descrição e botão para ver os conteúdos (leva para #conteudo) -->
+    <header class="hero d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Domine a Matemática com confiança</h1>
+            <p class="lead mb-4">Aulas personalizadas para quem quer aprender de verdade, do reforço ao Ensino Superior.</p>
+            <a href="#conteudo" class="btn btn-warning btn-md fw-bold">Ver Conteúdos</a>
         </div>
     </header>
-    <!-- TERMINAR -->
+
     <main>
-        <section id="sobre" class="about background-equations">
-            <div class="container grid">
-                <div class="about-text">
-                    <h2>Sobre mim</h2>
-                    <p>
-                        Olá! Meu nome é Gabriel Duque, sou estudante de Física na UFMG e tenho experiência no ensino de matemática. 
-                        Sei que o estudo dessa matéria pode ser desafiador sem um bom direcionamento, 
-                        mas estou aqui para mostrar que ela pode ser simples, compreensível e aplicável a qualquer área do conhecimento. 
-                        Vamos juntos descobrir como a matemática pode ser descomplicada e até divertida!
-                    </p>
-                    <p>
-                        Meu objetivo é ajudar cada aluno a alcançar seu potencial máximo, seja para melhorar as notas no ensino fundamental, 
-                        médio ou superior, ou se preparar para o vestibular.
-                    </p>
-                </div>
-                <div class="about-image">
-                    <img src="./images/gabriel.jpg" width="250px" alt="Aulas de Matemática e Física">
+        <!-- Seção "Sobre o Gabriel" com foto, descrição e botão para conhecer a trajetória (leva para sobre.html) -->
+        <section id="sobre-resumo" class="py-5 bg-light text-dark">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0 text-center">
+                        <img src="./images/gabriel.jpg" class="img-fluid rounded shadow-lg profile-img" alt="Gabriel Duque">
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Olá, eu sou o Gabriel</h2>
+                        <p>Estudante de Física na <strong>UFMG</strong>, acredito que a matemática não precisa ser um bicho de sete cabeças. Minha metodologia é focada na clareza e na aplicação prática.</p>
+                        <a href="sobre.html" class="btn btn-outline-primary btn-azul">Conheça minha trajetória</a>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="aulas" class="contact">
+
+        <!-- Seção "Conteúdos" com cards para cada área de ensino (Educação Básica, Ensino Médio, ENEM/Vestibular, Ensino Superior) -->
+        <section id="conteudo" class="py-5">
             <div class="container">
-                <h2>Como funcionam as aulas</h2>
-            </div>
-        </section>        
-        <section id="conteudo" class="topics">
-            <div class="container">
-                <h2>Conteúdos abordados</h2> <br>
-                <div class="grid">
-                    <div class="topic-card">
-                        <h3>Matemática Básica</h3>
-                        <p>Razão e Proporção, Equações, Geometria Básica</p>
-                        <div class="icon">
-                            <!-- Ícone para Matemática Básica -->
-                            <i class="fas fa-calculator"></i> <!-- Calculadora -->
+                <h2 class="text-center mb-5 section-title text-white">Como posso te ajudar?</h2>
+                <!-- PRÓXIMO PASSO: TRAZER CONTEÚDO DOS CARDS DINAMICAMENTE COM SCRIPT -->
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 topic-card border-0 shadow">
+                            <div class="card-body text-center">
+                                <div class="icon-box mb-3"><i class="fas fa-calculator"></i></div>
+                                <h3>Educação Básica</h3>
+                                <p>Fundamentos sólidos para nunca mais travar em contas simples.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="topic-card">
-                        <h3>Matemática E.M</h3>
-                        <p>Funções, Teoria dos Conjuntos, Trigonometria</p>
-                        <div class="icon">
-                            <!-- Ícone para Matemática E.M -->
-                            <i class="fas fa-chart-line"></i> <!-- Gráfico de funções -->
-                        </div>
-                    </div> 
-                    <div class="topic-card">
-                        <h3>Ensino Superior</h3>
-                        <p>Cálculo, Geometria Analítica e Álgebra Linear, Equações Diferenciais</p>
-                        <div class="icon">
-                            <!-- Ícone para Ensino Superior -->
-                            <i class="fas fa-book-open"></i> <!-- Livro aberto -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 topic-card border-0 shadow">
+                            <div class="card-body text-center">
+                                <div class="icon-box mb-3"><i class="fas fa-chart-line"></i></div>
+                                <h3>Ensino Médio</h3>
+                                <p>Funções, trigonometria e tudo para o seu sucesso na escola.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="topic-card">
-                        <h3>Preparação para vestibulares</h3>
-                        <p>Simulados e estratégias para garantir um bom desempenho no ENEM e outros vestibulares</p>
-                        <div class="icon">
-                            <!-- Ícone para Preparação para vestibulares -->
-                            <i class="fas fa-graduation-cap"></i> <!-- Capelo de formatura -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 topic-card border-0 shadow">
+                            <div class="card-body text-center">
+                                <div class="icon-box mb-3"><i class="fas fa-graduation-cap"></i></div>
+                                <h3>ENEM e Vestibular</h3>
+                                <p>Estratégias e simulados focados nas provas mais concorridas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 topic-card border-0 shadow">
+                            <div class="card-body text-center">
+                                <div class="icon-box mb-3"><i class="fas fa-book-open"></i></div>
+                                <h3>Ensino Superior</h3>
+                                <p>Cálculo, Álgebra Linear e Física para universitários.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>        
-        <section id="valores" class="contact">
-            <div class="container">
-                <h2>Valores das aulas</h2>
-            </div>
         </section>
-        <section id="contato" class="contact">
-            <div class="container">
-                <h2>Entre em contato</h2>
+
+        <!-- Seção "Depoimentos" com avaliações (vindo do comentarios.json) de alunos e botão para contato (leva para contato.html) -->
+        <section id="depoimentos" class="py-5 bg-white text-dark">
+            <div class="container text-center">
+                <h2 class="mb-5 section-title">O que dizem os alunos</h2>
+                <div id="reviews-container" class="row justify-content-center g-4">
+                    </div>
+                <a href="contato.html" class="btn btn-warning btn-md mt-5 fw-bold">Entre em contato</a>
             </div>
         </section>
     </main>
-    <footer>
+
+    <!-- Rodapé simples com nome e site -->
+    <!-- PRÓXIMO PASSO: TRAZER RODAPÉ DINAMICAMENTE PARA TODAR AS PÁGINAS COM SCRIPT -->
+    <footer class="py-4 bg-dark text-white text-center">
         <div class="container">
-            <p>&copy; 2024 Gabriel Ensina | Todos os direitos reservados</p>
+            <p class="mb-0">Gabriel Ensina | gabriel-ensina.com </p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
