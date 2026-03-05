@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Ensina | Sobre</title>
+    <title>Gabriel Ensina | Sobre mim</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -11,5 +11,54 @@
 </head>
 <body>
 
+    <!-- Menu Superior contendo logotipo e botões "Sobre mim", "Metodologia" e "Aula Experimental" -->
+    <!-- Carregado dinamicamente por script.js para facilitar manutenção e evitar repetição de código -->
+    <div id="navbar"></div>
+
+    <!-- Seção Hero com título e descrição -->
+    <header class="hero d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Minha trajetória</h1>
+            <p class="lead mb-4">Paixão e comprometimento com o aprendizado.</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção "Sobre o Gabriel" com foto, descrição e botão para conhecer a trajetória (leva para sobre.html) -->
+        <section id="sobre-resumo" class="py-5 bg-light text-dark">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-lg-4 text-center">
+                        <img src="./images/gabriel.jpg" class="img-fluid rounded shadow profile-img" alt="Gabriel Duque UFMG">
+                    </div>
+                    <div class="col-md-6 col-lg-8">
+                        <h2 class="mb-4 mt-3">Quem sou eu?</h2>
+                        <div>
+                            <p>Atualmente cursando Física na <strong>UFMG</strong> (Universidade Federal de Minas Gerais), desenvolvi uma relação próxima com os números desde cedo. Minha missão com o "Gabriel Ensina" é mostrar que a exatas não é um bloqueio, mas uma ferramenta de compreensão do mundo.</p>
+                            <p>Com experiência em monitorias e aulas particulares, percebi que a maior dificuldade dos alunos não é a falta de capacidade, mas sim lacunas na base e a falta de uma explicação didática que fale a língua do estudante.</p>
+                            <div class="mt-4">
+                                <span class="badge bg-primary p-2 m-1">Didática Clara</span>
+                                <span class="badge bg-primary p-2 m-1">Foco em Resultados</span>
+                                <span class="badge bg-primary p-2 m-1">Suporte Continuo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Call to Action -->
+        <div id="cta-section"></div>
+
+        <!-- Seção de WhatsApp direto para contato -->
+        <div id="whatsapp-direto"></div>
+    </main>
+
+    <!-- Rodapé simples com nome e site -->
+    <!-- Carregado dinamicamente por script.js -->
+    <div id="footer"></div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
